@@ -1,0 +1,11 @@
+*.sh
+*.cache
+.env
+.phpstorm.meta.php
+/.idea
+/bootstrap/cache/*
+/vendor
+_ide_helper.php
+_ide_helper_models.php
+http-client.*
+http-request.*
