@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\CafeResource;
+use App\Http\Resources\CafeCollection;
 use App\Models\Cafe;
 
 class CafesIndexController extends Controller
 {
-    public function __invoke(): CafeResource
+    public function __invoke(): CafeCollection
     {
-        return CafeResource::make(Cafe::all());
+        return new CafeCollection(Cafe::all());
     }
 }

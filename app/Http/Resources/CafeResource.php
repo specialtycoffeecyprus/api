@@ -17,6 +17,22 @@ class CafeResource extends JsonResource
      */
     public function toArray($request): array|JsonSerializable|Arrayable
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'type' => 'Feature',
+            'properties' => [
+                'name' => $this->name,
+                'description' => $this->description,
+                //'code' => $this->code,
+                'placeId' => $this->place_id,
+            ],
+            'geometry' => [
+                'type' => 'Point',
+                'coordinates' => [
+                    (float)$this->position->longitude,
+                    (float)$this->position->latitude,
+                ],
+            ],
+        ];
     }
 }
