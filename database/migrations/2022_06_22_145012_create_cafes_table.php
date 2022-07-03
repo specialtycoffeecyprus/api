@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             //$table->text('description')->fulltext()->nullable();
             $table->string('code')->index();
-            $table->string('placeId');
+            $table->string('place_id');
             $table->point('position');
         });
     }
