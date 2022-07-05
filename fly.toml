@@ -19,6 +19,7 @@ allowed_public_ports = []
 auto_rollback = true
 
 [[services]]
+http_checks = []
 internal_port = 8080
 processes = ["app"]
 protocol = "tcp"
@@ -38,12 +39,8 @@ port = 80
 handlers = ["tls", "http"]
 port = 443
 
-[[services.http_checks]]
+[[services.tcp_checks]]
 grace_period = "5s"
 interval = "10s"
-method = "get"
-path = "/cafes"
-protocol = "http"
 restart_limit = 0
 timeout = "1s"
-tls_skip_verify = false
