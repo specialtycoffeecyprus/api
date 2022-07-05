@@ -7,6 +7,7 @@ processes = []
 APP_ENV = "production"
 APP_NAME = "Specialty Coffee in Cyprus"
 APP_URL = "https://api.specialtycoffee.cy"
+APP_URL_INSECURE = "http://api.specialtycoffee.cy"
 DB_CONNECTION = "sqlite"
 LOG_CHANNEL = "stderr"
 LOG_LEVEL = "info"
