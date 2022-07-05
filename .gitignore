@@ -1,5 +1,4 @@
 *.cache
-*.sh
 .env
 .idea
 .phpstorm.meta.php

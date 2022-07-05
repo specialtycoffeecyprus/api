@@ -16,3 +16,7 @@ indent_size = 2
 
 [docker-compose.yml]
 indent_size = 4
+
+[Caddyfile]
+indent_style = tab
+indent_size = 1

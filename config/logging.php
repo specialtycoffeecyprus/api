@@ -33,6 +33,9 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
             'handler' => StreamHandler::class,
             'formatter' => env('LOG_STDERR_FORMATTER'),
+            'formatter_with' => [
+                'includeStacktraces' => true,
+            ],
             'with' => [
                 'stream' => 'php://stderr',
             ],
