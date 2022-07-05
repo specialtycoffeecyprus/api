@@ -1,0 +1,16 @@
+﻿.editorconfig
+#.env*
+.git
+.gitattributes
+.gitignore
+Dockerfile
+LICENSE
+README.md
+bootstrap/cache/*
+database/*.sqlite*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/logs/*
+tests
+vendor

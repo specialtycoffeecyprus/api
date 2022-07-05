@@ -9,6 +9,7 @@ use Illuminate\Database\DatabaseServiceProvider;
 use Illuminate\Filesystem\FilesystemServiceProvider;
 use Illuminate\Foundation\Providers\ConsoleSupportServiceProvider;
 use Illuminate\Foundation\Providers\FoundationServiceProvider;
+use Illuminate\Queue\QueueServiceProvider;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Translation\TranslationServiceProvider;
 use Illuminate\Validation\ValidationServiceProvider;
@@ -46,7 +47,7 @@ return [
         //NotificationServiceProvider::class,
         //PaginationServiceProvider::class,
         //PipelineServiceProvider::class,
-        //QueueServiceProvider::class,
+        QueueServiceProvider::class,
         //RedisServiceProvider::class,
         //PasswordResetServiceProvider::class,
         //SessionServiceProvider::class,
