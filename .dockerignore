@@ -1,5 +1,5 @@
 ﻿.editorconfig
-#.env*
+.env*
 .git
 .gitattributes
 .gitignore
@@ -9,6 +9,8 @@ README.md
 bootstrap/cache/*
 database/*.sqlite*
 storage/framework/cache/*
+!storage/framework/cache/data
+storage/framework/cache/data/*
 storage/framework/sessions/*
 storage/framework/views/*
 storage/logs/*
