@@ -5,7 +5,7 @@
 	skip_install_trust
 }
 
-:8080 {
+{$APP_URL_INSECURE}:8080 {
 	root * /var/www/html/public
 	php_fastcgi 127.0.0.1:9000
 	encode gzip
@@ -14,4 +14,10 @@
 
 http://{$FLY_APP_NAME}.fly.dev:8080 {
 	redir {$APP_URL}{uri} permanent
+	header -Server
+}
+
+:8080 {
+ 	respond 404
+	header -Server
 }
