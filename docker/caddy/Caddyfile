@@ -12,11 +12,6 @@
 	header -Server
 }
 
-http://{$FLY_APP_NAME}.fly.dev:8080 {
-	redir {$APP_URL}{uri} permanent
-	header -Server
-}
-
 :8080 {
  	respond 404
 	header -Server
