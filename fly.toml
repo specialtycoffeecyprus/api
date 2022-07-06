@@ -3,6 +3,9 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
+[build.args]
+DB_CONNECTION = "sqlite"
+
 [env]
 APP_ENV = "production"
 APP_NAME = "Specialty Coffee in Cyprus"
