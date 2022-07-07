@@ -18,7 +18,8 @@
         "ext-pdo_sqlite": "*",
         "ext-sqlite3": "*",
         "ext-phar": "*",
-        "laravel/framework": "^9.0"
+        "laravel/framework": "^9.0",
+        "sentry/sentry-laravel": "*"
     },
     "replace": {
         "symfony/polyfill-ctype": "*",
