@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http;
 
+use App\Http\Middleware\JsonResponse;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
 use App\Http\Middleware\TrimStrings;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
@@ -25,6 +26,7 @@ class Kernel extends HttpKernel
         ValidatePostSize::class,
         TrimStrings::class,
         ConvertEmptyStringsToNull::class,
+        JsonResponse::class,
     ];
 
     /** @var string[][] */
