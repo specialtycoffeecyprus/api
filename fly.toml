@@ -17,7 +17,6 @@ LOG_CHANNEL = "stderr"
 LOG_LEVEL = "info"
 LOG_STDERR_FORMATTER = "Monolog\\Formatter\\JsonFormatter"
 PRIMARY_REGION = "fra"
-SENTRY_LARAVEL_DSN = "https://b9afe3aff1fb4125aa526a7fcf7d8d6a@o1308831.ingest.sentry.io/6554502"
 SENTRY_SEND_DEFAULT_PII = "true"
 SENTRY_TRACES_SAMPLE_RATE = 1.0
 
