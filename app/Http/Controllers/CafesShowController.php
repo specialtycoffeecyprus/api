@@ -11,6 +11,6 @@ class CafesShowController extends Controller
 {
     public function __invoke(Cafe $cafe): CafeResource
     {
-        return CafeResource::make($cafe);
+        return new CafeResource($cafe);
     }
 }
