@@ -17,6 +17,7 @@ LOG_CHANNEL = "stderr"
 LOG_LEVEL = "info"
 LOG_STDERR_FORMATTER = "Monolog\\Formatter\\JsonFormatter"
 PRIMARY_REGION = "fra"
+SCOUT_DRIVER = "collection"
 SENTRY_SEND_DEFAULT_PII = "true"
 SENTRY_TRACES_SAMPLE_RATE = 1.0
 
