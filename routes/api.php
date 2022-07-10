@@ -12,7 +12,7 @@ Route::middleware('api')->group(static function (): void {
     Route::prefix('/cafes')->group(static function (): void {
         Route::get('/', CafesIndexController::class);
         Route::get('/random', CafesRandomController::class);
-        Route::post('/search', CafesSearchController::class);
+        Route::get('/search', CafesSearchController::class);
         Route::get('/{cafe}', CafesShowController::class);
     });
 });
