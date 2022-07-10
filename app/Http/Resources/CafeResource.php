@@ -29,8 +29,8 @@ class CafeResource extends JsonResource
             'geometry' => [
                 'type' => 'Point',
                 'coordinates' => [
-                    (float)$this->position->longitude,
-                    (float)$this->position->latitude,
+                    (float)$this->longitude,
+                    (float)$this->latitude,
                 ],
             ],
         ];

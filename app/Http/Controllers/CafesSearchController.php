@@ -12,8 +12,8 @@ class CafesSearchController extends Controller
 {
     public function __invoke(CafeSearchRequest $request): CafeCollection
     {
-        $q = $request->safe()['q'];
+        $q = $request->safe(['q'])['q'];
 
-        return new CafeCollection(Cafe::where('name', 'like', "%{$q}%")->get());
+        return new CafeCollection(Cafe::search($q)->get());
     }
 }

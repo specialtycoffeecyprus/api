@@ -19,6 +19,7 @@
         "ext-sqlite3": "*",
         "ext-phar": "*",
         "laravel/framework": "^9.0",
+        "laravel/scout": "*",
         "sentry/sentry-laravel": "*"
     },
     "replace": {
