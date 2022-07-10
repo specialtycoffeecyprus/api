@@ -13,10 +13,6 @@ class Cafe extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $casts = [
-        'position' => Point::class,
-    ];
-
     protected $hidden = [
         'created_at',
         'updated_at',
