@@ -53,7 +53,7 @@
         "htaccess-protect": false,
         "notify-on-install": false,
         "optimize-autoloader": true,
-        "platform-check": true,
+        "platform-check": false,
         "preferred-install": "dist",
         "sort-packages": true
     },
