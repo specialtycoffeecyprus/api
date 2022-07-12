@@ -11,6 +11,6 @@ class CafeSearchRequest extends FormRequest
     /** @return array<string, string> */
     public function rules(): array
     {
-        return ['q' => ['required', 'string', 'max:255']];
+        return ['q' => ['required', 'string', 'between:3,255']];
     }
 }
