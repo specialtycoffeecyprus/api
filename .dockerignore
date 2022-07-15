@@ -1,5 +1,5 @@
 ﻿.editorconfig
-.env*
+.env
 .git
 .gitattributes
 .gitignore
