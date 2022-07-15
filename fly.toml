@@ -3,21 +3,8 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
-[build.args]
-DB_CONNECTION = "sqlite"
-
 [env]
-APP_ENV = "production"
-APP_NAME = "Specialty Coffee in Cyprus"
-APP_URL = "https://api.specialtycoffee.cy"
-APP_URL_INSECURE = "http://api.specialtycoffee.cy"
-CORS_ORIGIN = "https://specialtycoffee.cy"
-DB_CONNECTION = "sqlite"
-LOG_CHANNEL = "stderr"
-LOG_LEVEL = "info"
-LOG_STDERR_FORMATTER = "Monolog\\Formatter\\JsonFormatter"
 PRIMARY_REGION = "fra"
-SCOUT_DRIVER = "collection"
 SENTRY_SEND_DEFAULT_PII = "true"
 SENTRY_TRACES_SAMPLE_RATE = 1.0
 
