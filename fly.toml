@@ -5,8 +5,6 @@ processes = []
 
 [env]
 PRIMARY_REGION = "fra"
-SENTRY_SEND_DEFAULT_PII = "true"
-SENTRY_TRACES_SAMPLE_RATE = 1.0
 
 [experimental]
 allowed_public_ports = []
