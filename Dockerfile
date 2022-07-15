@@ -21,7 +21,7 @@ RUN composer install --no-autoloader --no-dev --no-interaction --no-scripts
 
 COPY --chown=www-data:www-data . .
 
-ARG DB_CONNECTION
+ARG APP_ENV
 
 RUN set -eux ; \
     chown -R www-data:www-data vendor ; \
