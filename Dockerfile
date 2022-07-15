@@ -21,14 +21,13 @@ RUN composer install --no-autoloader --no-dev --no-interaction --no-scripts
 
 COPY --chown=www-data:www-data . .
 
-#ARG DB_CONNECTION
+ARG APP_ENV
 
 RUN set -eux ; \
     chown -R www-data:www-data vendor ; \
     chmod -R -x+X . ; \
     touch database/database.sqlite; \
     composer dump-autoload --classmap-authoritative --optimize --no-interaction; \
-    env; \
     php artisan optimize:clear; \
     php artisan migrate:refresh --force --no-interaction --seed
 
