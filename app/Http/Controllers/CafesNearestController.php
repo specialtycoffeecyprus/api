@@ -8,7 +8,7 @@ use App\Http\Requests\CafesNearestRequest;
 use App\Http\Resources\CafeResource;
 use App\Models\Cafe;
 
-class CafesNearestController extends Controller
+final class CafesNearestController extends Controller
 {
     public function __invoke(CafesNearestRequest $request): CafeResource
     {

@@ -8,7 +8,7 @@ use App\Http\Requests\CafeSearchRequest;
 use App\Http\Resources\CafeCollection;
 use App\Models\Cafe;
 
-class CafesSearchController extends Controller
+final class CafesSearchController extends Controller
 {
     public function __invoke(CafeSearchRequest $request): CafeCollection
     {

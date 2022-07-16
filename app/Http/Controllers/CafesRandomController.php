@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\CafeResource;
 use App\Models\Cafe;
 
-class CafesRandomController extends Controller
+final class CafesRandomController extends Controller
 {
     public function __invoke(): CafeResource
     {

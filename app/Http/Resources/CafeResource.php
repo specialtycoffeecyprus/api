@@ -4,18 +4,17 @@ declare(strict_types=1);
 
 namespace App\Http\Resources;
 
-use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
-use JsonSerializable;
 
-class CafeResource extends JsonResource
+final class CafeResource extends JsonResource
 {
     /**
      * @inheritDoc
      * @param Request $request
+     * @return array{id: int, type: string, properties: array{name: string, description: string, placeId: string}, geometry: array{type: string, coordinates: float[]}}
      */
-    public function toArray($request): array|JsonSerializable|Arrayable
+    public function toArray($request): array
     {
         return [
             'id' => $this->id,

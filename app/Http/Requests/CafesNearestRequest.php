@@ -6,9 +6,9 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CafesNearestRequest extends FormRequest
+final class CafesNearestRequest extends FormRequest
 {
-    /** @return array<string, string> */
+    /** @return array{latitude: string[], longitude: string[]} */
     public function rules(): array
     {
         return [

@@ -4,15 +4,17 @@ declare(strict_types=1);
 
 namespace App\Http\Resources;
 
-use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
-use JsonSerializable;
+use Illuminate\Support\Collection;
 
-class CafeCollection extends ResourceCollection
+final class CafeCollection extends ResourceCollection
 {
-    /** @param Request $request */
-    public function toArray($request): array|JsonSerializable|Arrayable
+    /**
+     * @param Request $request
+     * @return array{type: string, features: Collection}
+     */
+    public function toArray($request): array
     {
         return [
             'type' => 'FeatureCollection',

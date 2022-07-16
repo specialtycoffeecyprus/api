@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\CafeCollection;
 use App\Models\Cafe;
 
-class CafesIndexController extends Controller
+final class CafesIndexController extends Controller
 {
     public function __invoke(): CafeCollection
     {
