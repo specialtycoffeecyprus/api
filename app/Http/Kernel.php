@@ -16,11 +16,10 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Routing\Middleware\ThrottleRequests;
 use Illuminate\Routing\Middleware\ValidateSignature;
 
-class Kernel extends HttpKernel
+final class Kernel extends HttpKernel
 {
     /** @var string[] */
     protected $middleware = [
-         //\App\Http\Middleware\TrustHosts::class,
         HandleCors::class,
         PreventRequestsDuringMaintenance::class,
         ValidatePostSize::class,

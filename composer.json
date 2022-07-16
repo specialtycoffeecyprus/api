@@ -22,6 +22,10 @@
         "laravel/scout": "*",
         "sentry/sentry-laravel": "*"
     },
+    "require-dev": {
+        "ext-intl": "*",
+        "rector/rector": "*"
+    },
     "replace": {
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
