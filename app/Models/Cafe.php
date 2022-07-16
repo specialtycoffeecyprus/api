@@ -21,4 +21,16 @@ final class Cafe extends Model
         'updated_at',
         'deleted_at',
     ];
+
+
+    /** @inheritDoc */
+    public function toSearchableArray(): array
+    {
+        return [
+            'id' => $this->id,
+            'code' => $this->code,
+            'name' => $this->name,
+            'description' => $this->description,
+        ];
+    }
 }
