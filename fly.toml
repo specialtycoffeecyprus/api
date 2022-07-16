@@ -3,11 +3,11 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
-[build.args]
-APP_ENV = "production"
-
 [env]
 PRIMARY_REGION = "fra"
+
+[deploy]
+release_command = "php artisan migrate:refresh --force --no-interaction --seed"
 
 [experimental]
 allowed_public_ports = []
