@@ -27,7 +27,7 @@ RUN set -eux ; \
     chown -R www-data:www-data vendor ; \
     chmod -R -x+X . ; \
     touch database/database.sqlite; \
-    composer dump-autoload --classmap-authoritative --optimize --no-interaction; \
+    composer dump-autoload --classmap-authoritative --no-interaction; \
     php artisan optimize:clear; \
     php artisan migrate:refresh --force --no-interaction --seed
 
