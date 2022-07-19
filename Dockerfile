@@ -16,6 +16,7 @@ COPY docker/supervisor/supervisord.conf /etc/
 COPY --chown=www-data:www-data composer.* .
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
+ENV COMPOSER_CACHE_DIR /dev/null
 
 RUN composer install --no-autoloader --no-dev --no-interaction --no-scripts
 
