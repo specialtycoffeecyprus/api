@@ -29,7 +29,6 @@ RUN set -eux ; \
     touch database/database.sqlite; \
     composer dump-autoload --classmap-authoritative --no-interaction; \
     php artisan optimize:clear; \
-    php artisan optimize; \
     php artisan migrate:refresh --force --no-interaction --seed
 
 EXPOSE 8080
