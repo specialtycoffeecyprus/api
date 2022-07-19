@@ -26,6 +26,7 @@ RUN set -eux ; \
     chmod -R -x+X . ; \
     touch database/database.sqlite; \
     composer dump-autoload --classmap-authoritative --no-interaction; \
+    env|sort; \
     php artisan optimize:clear --env=${APP_ENV}; \
     php artisan optimize --env=${APP_ENV}; \
     php artisan migrate:refresh --env=${APP_ENV} --force --no-interaction --seed

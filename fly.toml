@@ -3,9 +3,6 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
-[build.args]
-APP_ENV = "production"
-
 [env]
 PRIMARY_REGION = "fra"
 
