@@ -21,16 +21,14 @@ RUN composer install --no-autoloader --no-dev --no-interaction --no-scripts
 
 COPY --chown=www-data:www-data . .
 
-ARG APP_ENV
-
 RUN set -eux ; \
     chown -R www-data:www-data vendor ; \
     chmod -R -x+X . ; \
     touch database/database.sqlite; \
     composer dump-autoload --classmap-authoritative --no-interaction; \
-    php artisan optimize:clear; \
-    php artisan optimize; \
-    php artisan migrate:refresh --force --no-interaction --seed
+    php artisan optimize:clear --env=${APP_ENV}; \
+    php artisan optimize --env=${APP_ENV}; \
+    php artisan migrate:refresh --env=${APP_ENV} --force --no-interaction --seed
 
 EXPOSE 8080
 
