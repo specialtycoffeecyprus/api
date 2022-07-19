@@ -14,7 +14,7 @@ class CafeSeeder extends Seeder
         DB::table('cafes')->insert([
             [
                 'name' => "Paul's Coffee Roasters",
-                'description' => 'Cozy coffee shop in Larnaca downtown. There are 5-7 wellknown coffee origins, V60, Cold Brew and classic drinks. A small main hall and a large garden in the backyard. Few power outlets for digital nomads',
+                'description' => 'Cosy coffee shop in Larnaca downtown. There are 5-7 well-known coffee origins, V60, Cold Brew and classic drinks. A small main hall and a large garden in the backyard. Few power outlets for digital nomads',
                 'code' => 'WJ7M+QX Larnaca, Cyprus',
                 'place_id' => 'ChIJGyOA68eD4BQRZtKA5kM_O0c',
                 'latitude' => '34.9143997',
@@ -38,7 +38,7 @@ class CafeSeeder extends Seeder
             ],
             [
                 'name' => 'Menta Speciality CoffeeShop ',
-                'description' => 'Very small coffee shop with a few tables outside. Greek barista and the perfect V60 and Cold Brew',
+                'description' => 'Tiny coffee shop with a few tables outside. Greek barista and the perfect V60 and Cold Brew',
                 'code' => '5975+XF Nicosia, Cyprus',
                 'place_id' => 'ChIJI3HxklcX3hQRHDVP87cbnIo',
                 'latitude' => '35.1649223',
@@ -54,7 +54,7 @@ class CafeSeeder extends Seeder
             ],
             [
                 'name' => 'Nomad Bread & Coffee',
-                'description' => 'Small takeaway coffee shop in Limassol center with lots of coffee origins. No power sockets at all',
+                'description' => 'Small takeaway coffee shop in Limassol centre with lots of coffee origins. No power sockets at all',
                 'code' => 'M2MX+67 Limassol, Cyprus',
                 'place_id' => 'ChIJaWe7ozQz5xQRUKPzaPpiOCk',
                 'latitude' => '34.6830013',
