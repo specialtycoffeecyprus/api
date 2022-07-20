@@ -65,8 +65,8 @@ class CafeSeeder extends Seeder
                 'description' => 'Small takeaway coffee shop with two small verandas in the old town of Nicosia. No outlets',
                 'code' => '5985+Q8 Nicosia, Cyprus',
                 'place_id' => 'ChIJa39mz1kX3hQRdnH8Pdx2yAU',
-                'latitude' => '35.167567',
-                'longitude' => '33.359025',
+                'latitude' => '35.1669308',
+                'longitude' => '33.3582758',
             ],
         ]);
     }
