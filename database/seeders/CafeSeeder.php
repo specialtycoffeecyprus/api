@@ -68,6 +68,14 @@ class CafeSeeder extends Seeder
                 'latitude' => '35.1669308',
                 'longitude' => '33.3582758',
             ],
+            [
+                'name' => 'The Daily Roast',
+                'description' => 'Friendly coffee shop with smiling barista, breakfast and brunch. There are few tables with outlets inside and outside',
+                'code' => '5957+7M Strovolos, Cyprus',
+                'place_id' => 'ChIJ-_-vweMZ3hQRrS0J-nQjuuY',
+                'latitude' => '35.1582018',
+                'longitude' => '33.3642074',
+            ],
         ]);
     }
 }
