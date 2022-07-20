@@ -60,6 +60,14 @@ class CafeSeeder extends Seeder
                 'latitude' => '34.6830013',
                 'longitude' => '33.04813059999999',
             ],
+            [
+                'name' => 'BREW LAB',
+                'description' => 'Small takeaway coffee shop with two small verandas in the old town of Nicosia. No outlets',
+                'code' => '5985+Q8 Nicosia, Cyprus',
+                'place_id' => 'ChIJa39mz1kX3hQRdnH8Pdx2yAU',
+                'latitude' => '35.1682973',
+                'longitude' => '33.3610745',
+            ],
         ]);
     }
 }
