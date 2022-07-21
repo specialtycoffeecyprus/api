@@ -76,6 +76,22 @@ class CafeSeeder extends Seeder
                 'latitude' => '35.1582018',
                 'longitude' => '33.3642074',
             ],
+            [
+                'name' => 'Bike & Bean Coffee Station',
+                'description' => 'The sweet little coffee spot near the beach serves excellent speciality coffee by skilled baristas',
+                'code' => 'M3VM+JW Germasogeia, Cyprus',
+                'place_id' => 'ChIJi4P5gf7N4BQRV19JRLjZOZ0',
+                'latitude' => '34.69403990000001',
+                'longitude' => '33.0847664',
+            ],
+            [
+                'name' => 'Cultivos Coffee',
+                'description' => 'Third-wave specialty coffee shop in Paphos. Single-origin beans on the grinder are definitely recommended',
+                'code' => 'QCFH+Q8V, Pindou, Paphos, Cyprus',
+                'place_id' => 'ChIJVbazMTYH5xQRa3_1yJp3QYc',
+                'latitude' => '34.7744771',
+                'longitude' => '32.4283107',
+            ],
         ]);
     }
 }
