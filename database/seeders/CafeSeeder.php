@@ -92,6 +92,22 @@ class CafeSeeder extends Seeder
                 'latitude' => '34.7744771',
                 'longitude' => '32.4283107',
             ],
+            [
+                'name' => 'Green Colibri',
+                'description' => 'High-quality coffee and drinks to work, study, pass a day, and snack. Pleasant design and friendly staff',
+                'code' => '5968+M2 Nicosia',
+                'place_id' => 'ChIJP2XvqN4X3hQRSJx83Z10fdM',
+                'latitude' => '35.16168769999999',
+                'longitude' => '33.3650239',
+            ],
+            [
+                'name' => 'A κχoffee project',
+                'description' => 'Lovely coffee shop with a large selection of good coffee beans, pour-overs and a pleasant environment',
+                'code' => '5988+HM Nicosia, Cyprus',
+                'place_id' => 'ChIJF6t_GVwX3hQR72Mg8Uv5p1o',
+                'latitude' => '35.1664865',
+                'longitude' => '33.3666372',
+            ],
         ]);
     }
 }
