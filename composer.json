@@ -1,9 +1,30 @@
 {
     "name": "specialtycoffeecyprus/specialty-api",
     "type": "project",
-    "description": "Specialty Coffee in Cyprus",
-    "keywords": ["specialty", "coffee", "coffeshop", "cyprus"],
+    "description": "REST API microservice of Specialty Coffee in Cyprus website",
+    "keywords": [
+        "REST",
+        "API",
+        "microservice",
+        "specialty",
+        "coffee",
+        "coffeshop",
+        "cyprus"
+    ],
+    "homepage": "https://specialtycoffee.cy/",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Vladimir Martsul",
+            "homepage": "https://t.me/vladimir_mvs",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "specialtycoffeecy@gmail.com",
+        "issues": "https://github.com/specialtycoffeecyprus/specialty-api/issues",
+        "docs": "https://habr.com/ru/post/677288/"
+    },
     "require": {
         "php": "^8.1",
         "ext-ctype": "*",
@@ -50,6 +71,8 @@
             "Database\\Seeders\\": "database/seeders/"
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "apcu-autoloader": true,
         "classmap-authoritative": false,
@@ -61,8 +84,6 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
