@@ -58,8 +58,6 @@ return [
         AppServiceProvider::class,
         //EventServiceProvider::class,
         RouteServiceProvider::class,
-
     ],
-
     'aliases' => Facade::defaultAliases()->merge([])->toArray(),
 ];
