@@ -7,5 +7,4 @@ _ide_helper_models.php
 bootstrap/cache/*
 http-client.*
 http-request.*
-tests
 vendor

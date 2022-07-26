@@ -45,6 +45,11 @@
     },
     "require-dev": {
         "ext-intl": "*",
+        "brianium/paratest": "^6.6",
+        "mockery/mockery": "*",
+        "pestphp/pest": "*",
+        "pestphp/pest-plugin-laravel": "*",
+        "pestphp/pest-plugin-parallel": "*",
         "rector/rector": "*"
     },
     "replace": {
@@ -71,9 +76,17 @@
             "Database\\Seeders\\": "database/seeders/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
         "apcu-autoloader": true,
         "classmap-authoritative": false,
         "discard-changes": true,

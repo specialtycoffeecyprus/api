@@ -10,11 +10,13 @@ use App\Http\Controllers\CafesShowController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('api')->group(static function (): void {
-    Route::prefix('/cafes')->group(static function (): void {
-        Route::get('/', CafesIndexController::class);
-        Route::get('/random', CafesRandomController::class);
-        Route::get('/search', CafesSearchController::class);
-        Route::get('/nearest', CafesNearestController::class);
-        Route::get('/{cafe}', CafesShowController::class);
+    Route::name('cafes.')->group(static function (): void {
+        Route::prefix('/cafes')->group(static function (): void {
+            Route::get('/', CafesIndexController::class)->name('index');
+            Route::get('/random', CafesRandomController::class)->name('random');
+            Route::get('/search', CafesSearchController::class)->name('search');
+            Route::get('/nearest', CafesNearestController::class)->name('nearest');
+            Route::get('/{cafe}', CafesShowController::class)->name('cafe');
+        });
     });
 });
