@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f48b1498e5ea6e5ded5acfb2d15d4e8",
+    "content-hash": "dbd90cc6ee45dd5397978f50c1541139",
     "packages": [
         {
             "name": "brick/math",
@@ -674,16 +674,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.21.6",
+            "version": "v9.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "569d7a2e361895f90e66bb4e02db89c27691a0e7"
+                "reference": "b3b3dd43b9899f23df6d1d3e5390bd4662947a46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/569d7a2e361895f90e66bb4e02db89c27691a0e7",
-                "reference": "569d7a2e361895f90e66bb4e02db89c27691a0e7",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b3b3dd43b9899f23df6d1d3e5390bd4662947a46",
+                "reference": "b3b3dd43b9899f23df6d1d3e5390bd4662947a46",
                 "shasum": ""
             },
             "require": {
@@ -850,7 +850,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-07-22T14:16:44+00:00"
+            "time": "2022-07-26T16:16:33+00:00"
         },
         {
             "name": "laravel/scout",
@@ -4591,6 +4591,148 @@
             "time": "2022-07-22T14:07:17+00:00"
         },
         {
+            "name": "cebe/php-openapi",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cebe/php-openapi.git",
+                "reference": "020d72b8e3a9a60bc229953e93eda25c49f46f45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cebe/php-openapi/zipball/020d72b8e3a9a60bc229953e93eda25c49f46f45",
+                "reference": "020d72b8e3a9a60bc229953e93eda25c49f46f45",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "justinrainbow/json-schema": "^5.2",
+                "php": ">=7.1.0",
+                "symfony/yaml": "^3.4 || ^4 || ^5 || ^6"
+            },
+            "conflict": {
+                "symfony/yaml": "3.4.0 - 3.4.4 || 4.0.0 - 4.4.17 || 5.0.0 - 5.1.9 || 5.2.0"
+            },
+            "require-dev": {
+                "apis-guru/openapi-directory": "1.0.0",
+                "cebe/indent": "*",
+                "mermade/openapi3-examples": "1.0.0",
+                "nexmo/api-specification": "1.0.0",
+                "oai/openapi-specification": "3.0.3",
+                "phpstan/phpstan": "^0.12.0",
+                "phpunit/phpunit": "^6.5 || ^7.5 || ^8.5 || ^9.4"
+            },
+            "bin": [
+                "bin/php-openapi"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "cebe\\openapi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "https://cebe.cc/",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Read and write OpenAPI yaml/json files and make the content accessable in PHP objects.",
+            "homepage": "https://github.com/cebe/php-openapi#readme",
+            "keywords": [
+                "openapi"
+            ],
+            "support": {
+                "issues": "https://github.com/cebe/php-openapi/issues",
+                "source": "https://github.com/cebe/php-openapi"
+            },
+            "time": "2022-04-20T14:46:44+00:00"
+        },
+        {
+            "name": "doctrine/annotations",
+            "version": "1.13.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "648b0343343565c4a056bfc8392201385e8d89f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/648b0343343565c4a056bfc8392201385e8d89f0",
+                "reference": "648b0343343565c4a056bfc8392201385e8d89f0",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "ext-tokenizer": "*",
+                "php": "^7.1 || ^8.0",
+                "psr/cache": "^1 || ^2 || ^3"
+            },
+            "require-dev": {
+                "doctrine/cache": "^1.11 || ^2.0",
+                "doctrine/coding-standard": "^6.0 || ^8.1",
+                "phpstan/phpstan": "^1.4.10 || ^1.8.0",
+                "phpunit/phpunit": "^7.5 || ^8.0 || ^9.1.5",
+                "symfony/cache": "^4.4 || ^5.2",
+                "vimeo/psalm": "^4.10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "https://www.doctrine-project.org/projects/annotations.html",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/annotations/issues",
+                "source": "https://github.com/doctrine/annotations/tree/1.13.3"
+            },
+            "time": "2022-07-02T10:48:51+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.4.1",
             "source": {
@@ -4659,6 +4801,82 @@
                 }
             ],
             "time": "2022-03-03T08:28:38+00:00"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "c268e882d4dbdd85e36e4ad69e02dc284f89d229"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/c268e882d4dbdd85e36e4ad69e02dc284f89d229",
+                "reference": "c268e882d4dbdd85e36e4ad69e02dc284f89d229",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^9.0",
+                "phpstan/phpstan": "^1.3",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
+                "vimeo/psalm": "^4.11"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "lexer",
+                "parser",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/lexer/issues",
+                "source": "https://github.com/doctrine/lexer/tree/1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-02-28T11:07:21+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -4834,6 +5052,138 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "hotmeteor/spectator",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hotmeteor/spectator.git",
+                "reference": "06bdf2c95fac4ead0af663a8390ed2b15b19b1e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hotmeteor/spectator/zipball/06bdf2c95fac4ead0af663a8390ed2b15b19b1e7",
+                "reference": "06bdf2c95fac4ead0af663a8390ed2b15b19b1e7",
+                "shasum": ""
+            },
+            "require": {
+                "cebe/php-openapi": "^1.5",
+                "ext-json": "*",
+                "laravel/framework": "^8.40.0|^9.0.0",
+                "opis/json-schema": "^2.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^5.1|^6.0",
+                "orchestra/testbench": "^6.0|^7.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spectator\\SpectatorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spectator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Campbell",
+                    "email": "adam@hotmeteor.com"
+                }
+            ],
+            "description": "Testing helpers for your OpenAPI spec",
+            "keywords": [
+                "laravel",
+                "openapi",
+                "spectator",
+                "testing"
+            ],
+            "support": {
+                "issues": "https://github.com/hotmeteor/spectator/issues",
+                "source": "https://github.com/hotmeteor/spectator/tree/v1.5.0"
+            },
+            "time": "2022-02-21T18:32:55+00:00"
+        },
+        {
+            "name": "justinrainbow/json-schema",
+            "version": "5.2.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "ad87d5a5ca981228e0e205c2bc7dfb8e24559b60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
+                "reference": "ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.2.20||~2.15.1",
+                "json-schema/json-schema-test-suite": "1.2.0",
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "bin": [
+                "bin/validate-json"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JsonSchema\\": "src/JsonSchema/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno Prieto Reis",
+                    "email": "bruno.p.reis@gmail.com"
+                },
+                {
+                    "name": "Justin Rainbow",
+                    "email": "justin.rainbow@gmail.com"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
+                    "name": "Robert Schönthal",
+                    "email": "seroscho@googlemail.com"
+                }
+            ],
+            "description": "A library to validate a json schema.",
+            "homepage": "https://github.com/justinrainbow/json-schema",
+            "keywords": [
+                "json",
+                "schema"
+            ],
+            "support": {
+                "issues": "https://github.com/justinrainbow/json-schema/issues",
+                "source": "https://github.com/justinrainbow/json-schema/tree/5.2.12"
+            },
+            "time": "2022-04-13T08:02:27+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -5109,6 +5459,196 @@
                 }
             ],
             "time": "2022-06-27T16:11:16+00:00"
+        },
+        {
+            "name": "opis/json-schema",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opis/json-schema.git",
+                "reference": "c48df6d7089a45f01e1c82432348f2d5976f9bfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opis/json-schema/zipball/c48df6d7089a45f01e1c82432348f2d5976f9bfb",
+                "reference": "c48df6d7089a45f01e1c82432348f2d5976f9bfb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "opis/string": "^2.0",
+                "opis/uri": "^1.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "ext-bcmath": "*",
+                "ext-intl": "*",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Opis\\JsonSchema\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sorin Sarca",
+                    "email": "sarca_sorin@hotmail.com"
+                },
+                {
+                    "name": "Marius Sarca",
+                    "email": "marius.sarca@gmail.com"
+                }
+            ],
+            "description": "Json Schema Validator for PHP",
+            "homepage": "https://opis.io/json-schema",
+            "keywords": [
+                "json",
+                "json-schema",
+                "schema",
+                "validation",
+                "validator"
+            ],
+            "support": {
+                "issues": "https://github.com/opis/json-schema/issues",
+                "source": "https://github.com/opis/json-schema/tree/2.3.0"
+            },
+            "time": "2022-01-08T20:38:03+00:00"
+        },
+        {
+            "name": "opis/string",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opis/string.git",
+                "reference": "9ebf1a1f873f502f6859d11210b25a4bf5d141e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opis/string/zipball/9ebf1a1f873f502f6859d11210b25a4bf5d141e7",
+                "reference": "9ebf1a1f873f502f6859d11210b25a4bf5d141e7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "ext-json": "*",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Opis\\String\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Marius Sarca",
+                    "email": "marius.sarca@gmail.com"
+                },
+                {
+                    "name": "Sorin Sarca",
+                    "email": "sarca_sorin@hotmail.com"
+                }
+            ],
+            "description": "Multibyte strings as objects",
+            "homepage": "https://opis.io/string",
+            "keywords": [
+                "multi-byte",
+                "opis",
+                "string",
+                "string manipulation",
+                "utf-8"
+            ],
+            "support": {
+                "issues": "https://github.com/opis/string/issues",
+                "source": "https://github.com/opis/string/tree/2.0.1"
+            },
+            "time": "2022-01-14T15:42:23+00:00"
+        },
+        {
+            "name": "opis/uri",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opis/uri.git",
+                "reference": "0f3ca49ab1a5e4a6681c286e0b2cc081b93a7d5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opis/uri/zipball/0f3ca49ab1a5e4a6681c286e0b2cc081b93a7d5a",
+                "reference": "0f3ca49ab1a5e4a6681c286e0b2cc081b93a7d5a",
+                "shasum": ""
+            },
+            "require": {
+                "opis/string": "^2.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Opis\\Uri\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Marius Sarca",
+                    "email": "marius.sarca@gmail.com"
+                },
+                {
+                    "name": "Sorin Sarca",
+                    "email": "sarca_sorin@hotmail.com"
+                }
+            ],
+            "description": "Build, parse and validate URIs and URI-templates",
+            "homepage": "https://opis.io",
+            "keywords": [
+                "URI Template",
+                "parse url",
+                "punycode",
+                "uri",
+                "uri components",
+                "url",
+                "validate uri"
+            ],
+            "support": {
+                "issues": "https://github.com/opis/uri/issues",
+                "source": "https://github.com/opis/uri/tree/1.1.0"
+            },
+            "time": "2021-05-22T15:57:08+00:00"
         },
         {
             "name": "pestphp/pest",
@@ -6290,6 +6830,55 @@
             "time": "2022-06-19T12:14:25+00:00"
         },
         {
+            "name": "psr/cache",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "aa5030cfa5405eccfdcb1083ce040c2cb8d253bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/aa5030cfa5405eccfdcb1083ce040c2cb8d253bf",
+                "reference": "aa5030cfa5405eccfdcb1083ce040c2cb8d253bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/3.0.0"
+            },
+            "time": "2021-02-03T23:26:27+00:00"
+        },
+        {
             "name": "rector/rector",
             "version": "0.13.9",
             "source": {
@@ -7314,6 +7903,80 @@
             "time": "2020-09-28T06:39:44+00:00"
         },
         {
+            "name": "symfony/yaml",
+            "version": "v6.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "b01c4e7dc6a51cbf114567af04a19789fd1011fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/b01c4e7dc6a51cbf114567af04a19789fd1011fe",
+                "reference": "b01c4e7dc6a51cbf114567af04a19789fd1011fe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "conflict": {
+                "symfony/console": "<5.4"
+            },
+            "require-dev": {
+                "symfony/console": "^5.4|^6.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "bin": [
+                "Resources/bin/yaml-lint"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Loads and dumps YAML files",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/yaml/tree/v6.1.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-06-20T12:01:07+00:00"
+        },
+        {
             "name": "theseer/tokenizer",
             "version": "1.2.1",
             "source": {
@@ -7420,6 +8083,83 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "zircote/swagger-php",
+            "version": "4.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zircote/swagger-php.git",
+                "reference": "97abe42376b41e072ede13b6f0582457a54d797a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/97abe42376b41e072ede13b6f0582457a54d797a",
+                "reference": "97abe42376b41e072ede13b6f0582457a54d797a",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "^1.7",
+                "ext-json": "*",
+                "php": ">=7.2",
+                "psr/log": "^1.1 || ^2.0 || 3.0",
+                "symfony/finder": ">=2.2",
+                "symfony/yaml": ">=3.3"
+            },
+            "require-dev": {
+                "composer/package-versions-deprecated": "^1.11",
+                "friendsofphp/php-cs-fixer": "^2.17 || ^3.0",
+                "phpstan/phpstan": "^1.6",
+                "phpunit/phpunit": ">=8",
+                "vimeo/psalm": "^4.23"
+            },
+            "bin": [
+                "bin/openapi"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OpenApi\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Allen",
+                    "email": "zircote@gmail.com"
+                },
+                {
+                    "name": "Bob Fanger",
+                    "email": "bfanger@gmail.com",
+                    "homepage": "https://bfanger.nl"
+                },
+                {
+                    "name": "Martin Rademacher",
+                    "email": "mano@radebatz.net",
+                    "homepage": "https://radebatz.net"
+                }
+            ],
+            "description": "swagger-php - Generate interactive documentation for your RESTful API using phpdoc annotations",
+            "homepage": "https://github.com/zircote/swagger-php/",
+            "keywords": [
+                "api",
+                "json",
+                "rest",
+                "service discovery"
+            ],
+            "support": {
+                "issues": "https://github.com/zircote/swagger-php/issues",
+                "source": "https://github.com/zircote/swagger-php/tree/4.4.7"
+            },
+            "time": "2022-07-02T04:55:25+00:00"
         }
     ],
     "aliases": [],

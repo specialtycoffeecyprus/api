@@ -46,6 +46,7 @@
     "require-dev": {
         "ext-intl": "*",
         "brianium/paratest": "^6.6",
+        "hotmeteor/spectator": "*",
         "mockery/mockery": "*",
         "pestphp/pest": "*",
         "pestphp/pest-plugin-laravel": "*",

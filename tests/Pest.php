@@ -3,13 +3,10 @@
 declare(strict_types=1);
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Routing\Middleware\ThrottleRequests;
 use Tests\TestCase;
 
-uses(TestCase::class, RefreshDatabase::class)->in(__DIR__);
-//uses(TestCase::class)->in(__DIR__);
-
-beforeEach(function (): void {
-    //$this->createApplication();
+uses(TestCase::class, RefreshDatabase::class)->beforeEach(function (): void {
     $this->refreshDatabase();
-    //$this->withoutMiddleware();
-});
+    $this->withoutMiddleware(ThrottleRequests::class);
+})->in(__DIR__);

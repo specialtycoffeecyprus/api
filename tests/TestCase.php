@@ -11,4 +11,6 @@ abstract class TestCase extends BaseTestCase
     use CreatesApplication;
 
     public bool $seed = true;
+
+    public string $apiSchema = 'openapi.yaml';
 }
