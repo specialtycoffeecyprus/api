@@ -22,5 +22,6 @@ storage/framework/cache/data/*
 storage/framework/sessions/*
 storage/framework/views/*
 storage/logs/*
+storage/openapi.yaml
 tests
 vendor

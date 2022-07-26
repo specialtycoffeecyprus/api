@@ -1,0 +1,200 @@
+openapi: 3.1.0
+info:
+  title: 'Specialty Coffee in Cyprus API'
+  version: 1.0.0
+paths:
+  /cafes:
+    get:
+      summary: 'List cafes'
+      responses:
+        '200':
+          $ref: '#/components/responses/CafeCollectionResponse'
+        '400':
+          $ref: '#/components/responses/BadRequestError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /cafes/nearest:
+    get:
+      summary: 'Lookup nearest cafe'
+      parameters:
+        -
+          $ref: '#/components/parameters/latitude'
+        -
+          $ref: '#/components/parameters/longitude'
+      responses:
+        '200':
+          $ref: '#/components/responses/CafeResourceResponse'
+        '400':
+          $ref: '#/components/responses/BadRequestError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /cafes/random:
+    get:
+      summary: 'Get random cafe'
+      responses:
+        '200':
+          $ref: '#/components/responses/CafeResourceResponse'
+        '400':
+          $ref: '#/components/responses/BadRequestError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /cafes/search:
+    get:
+      summary: 'Search cafes'
+      parameters:
+        -
+          $ref: '#/components/parameters/q'
+      responses:
+        '200':
+          $ref: '#/components/responses/CafeCollectionResponse'
+        '400':
+          $ref: '#/components/responses/BadRequestError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  '/cafes{cafe}':
+    get:
+      summary: 'Show cafe'
+      parameters:
+        -
+          name: cafe
+          in: path
+          required: true
+          allowEmptyValue: false
+          schema:
+            type: integer
+      responses:
+        '200':
+          $ref: '#/components/responses/CafeResourceResponse'
+        '400':
+          $ref: '#/components/responses/BadRequestError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '500':
+          $ref: '#/components/responses/ServerError'
+components:
+  schemas:
+    CafeCollection:
+      title: 'CafeCollection (Coffee shops)'
+      required:
+        - type
+        - features
+      properties:
+        type:
+          title: Type
+          type: string
+          enum:
+            - FeatureCollection
+        features:
+          title: features
+          type: array
+          items:
+            $ref: '#/components/schemas/CafeResource'
+      type: object
+    CafeResource:
+      title: 'CafeResource (Coffee shop)'
+      required:
+        - id
+        - type
+        - properties
+      properties:
+        id:
+          title: ID
+          type: integer
+        type:
+          title: Type
+          type: string
+          enum:
+            - Feature
+        properties:
+          title: Properties
+          required:
+            - name
+            - description
+            - placeId
+          properties:
+            name:
+              title: Name
+              type: string
+            description:
+              title: Description
+              type: string
+            placeId:
+              title: 'Google Place ID'
+              type: string
+          type: object
+        geometry:
+          title: Geometry
+          required:
+            - type
+            - coordinates
+          properties:
+            type:
+              title: Type
+              type: string
+              enum:
+                - Point
+            coordinates:
+              title: Coordinates
+              type: array
+              items:
+                type: number
+                format: float
+          type: object
+      type: object
+  responses:
+    CafeCollectionResponse:
+      description: 'Cafe Collection'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CafeCollection'
+    CafeResourceResponse:
+      description: 'Single Cafe'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CafeResource'
+    BadRequestError:
+      description: 'Bad Request'
+    NotFoundError:
+      description: 'Resource Not Found'
+    ServerError:
+      description: 'Server error'
+  parameters:
+    q:
+      name: q
+      in: query
+      required: true
+      allowEmptyValue: false
+      schema:
+        type: string
+        maxLength: 255
+        minLength: 3
+    latitude:
+      name: latitude
+      in: query
+      required: true
+      allowEmptyValue: false
+      schema:
+        type: string
+        format: float
+        maximum: 90
+        minimum: -90
+    longitude:
+      name: longitude
+      in: query
+      required: true
+      allowEmptyValue: false
+      schema:
+        type: string
+        format: float
+        maximum: 180
+        minimum: -180

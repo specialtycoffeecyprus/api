@@ -50,7 +50,8 @@
         "pestphp/pest": "*",
         "pestphp/pest-plugin-laravel": "*",
         "pestphp/pest-plugin-parallel": "*",
-        "rector/rector": "*"
+        "rector/rector": "*",
+        "zircote/swagger-php": "*"
     },
     "replace": {
         "symfony/polyfill-ctype": "*",
@@ -101,6 +102,7 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
-        ]
+        ],
+        "openapi": "openapi --version 3.1.0 --output storage/openapi.yaml app"
     }
 }
