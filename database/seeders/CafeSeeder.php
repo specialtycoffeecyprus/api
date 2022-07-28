@@ -108,6 +108,14 @@ class CafeSeeder extends Seeder
                 'latitude' => '35.1664865',
                 'longitude' => '33.3666372',
             ],
+            [
+                'name' => 'Nomad Bread & Coffee Germasogia',
+                'description' => 'Tiny takeaway coffee shop opposite beach area with lots of coffee origins',
+                'code' => 'M3XW+RX Germasogeia, Cyprus',
+                'place_id' => 'ChIJD9eSovjL4BQRH06tPeZARns',
+                'latitude' => '34.69951760000001',
+                'longitude' => '33.09743460000001',
+            ],
         ]);
     }
 }
