@@ -6,7 +6,6 @@ use Spectator\Spectator;
 use Symfony\Component\HttpFoundation\Response;
 
 beforeEach(function (): void {
-    $this->apiSchema = 'openapi.yaml';
     $this->endpoint = route('cafes.random');
 });
 

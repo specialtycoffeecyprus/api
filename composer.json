@@ -45,7 +45,7 @@
     },
     "require-dev": {
         "ext-intl": "*",
-        "brianium/paratest": "^6.6",
+        "brianium/paratest": "*",
         "hotmeteor/spectator": "*",
         "mockery/mockery": "*",
         "pestphp/pest": "*",
@@ -55,6 +55,11 @@
         "zircote/swagger-php": "*"
     },
     "replace": {
+        "dragonmantank/cron-expression": "*",
+        "egulias/email-validator": "*",
+        "league/commonmark": "*",
+        "league/flysystem": "*",
+        "symfony/mime": "*",
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
         "symfony/polyfill-intl-grapheme": "*",
@@ -64,11 +69,6 @@
         "symfony/polyfill-php73": "*",
         "symfony/polyfill-php80": "*",
         "symfony/polyfill-php81": "*",
-        "dragonmantank/cron-expression": "*",
-        "egulias/email-validator": "*",
-        "league/commonmark": "*",
-        "league/flysystem": "*",
-        "symfony/mime": "*",
         "symfony/var-dumper": "*",
         "tijsverkoyen/css-to-inline-styles": "*"
     },
