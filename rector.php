@@ -40,6 +40,7 @@ return static function (RectorConfig $rectorConfig): void {
         __DIR__.'/config',
         __DIR__.'/public/index.php',
         __DIR__.'/routes',
+        __DIR__.'/tests',
         __DIR__.'/artisan',
         __DIR__.'/rector.php',
     ]);

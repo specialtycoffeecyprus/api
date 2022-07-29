@@ -9,11 +9,11 @@ beforeEach(function (): void {
     $this->endpoint = route('cafes.nearest');
 });
 
-test('can process request method', function (string $latitude, string $longitude, string $method, int $status) {
+test('can process request method', function (string $latitude, string $longitude, string $method, int $status): void {
     $this->$method($this->endpoint."?latitude=$latitude&longitude=$longitude")->assertStatus($status);
 })->with('Search locations')->with('Request methods');
 
-test('fail if location query is invalid', function (string $latitudeQuery, string $latitudeError, string $longitudeQuery, string $longitudeError) {
+test('fail if location query is invalid', function (string $latitudeQuery, string $latitudeError, string $longitudeQuery, string $longitudeError): void {
     $this->get($this->endpoint.'?'.$latitudeQuery.'&'.$longitudeQuery)->assertInvalid(['latitude' => $latitudeError, 'longitude' => $longitudeError]);
 })->with([
     'latitude absent' => ['latitudeQuery' => '', 'latitudeError' => 'The latitude field is required.'],
@@ -29,7 +29,7 @@ test('fail if location query is invalid', function (string $latitudeQuery, strin
     'longitude too big' => ['longitudeQuery' => 'longitude='.random_int(181, 200), 'longitudeError' => 'The longitude must be between -180 and 180.'],
 ]);
 
-test('can lookup nearest cafe', function (int $latitude, int $longitude) {
+test('can lookup nearest cafe', function (int $latitude, int $longitude): void {
     Spectator::using($this->apiSchema);
 
     $this->getJson($this->endpoint."?latitude=$latitude&longitude=$longitude")->assertValidRequest()->assertValidResponse(Response::HTTP_OK);
