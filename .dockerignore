@@ -15,6 +15,7 @@ database/*.sqlite*
 fly.*
 http-client.*
 http-request.*
+phpunit.xml
 rector.php
 storage/framework/cache/*
 !storage/framework/cache/data
