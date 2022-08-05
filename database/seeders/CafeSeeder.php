@@ -116,6 +116,14 @@ final class CafeSeeder extends Seeder
                 'latitude' => '34.69951760000001',
                 'longitude' => '33.09743460000001',
             ],
+            [
+                'name' => "Nick's coffee bike",
+                'description' => 'Very cosy 2-story cafe with a friendly barista and a wide selection of coffee. There are sockets and desks on the 2nd floor',
+                'code' => 'WJ9M+34 Larnaca, Cyprus',
+                'place_id' => 'ChIJM7_dR9KD4BQRFHp1Z4CTNXE',
+                'latitude' => '34.9176959',
+                'longitude' => '33.6327684',
+            ],
         ]);
     }
 }
