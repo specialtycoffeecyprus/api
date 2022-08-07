@@ -15,7 +15,7 @@ return new class extends Migration
             $table->timestamps();
             $table->softDeletes();
             $table->string('name')->index();
-            $table->text('description')->nullable();
+            $table->text('description')->index()->nullable();
             //$table->text('description')->fulltext()->nullable();
             $table->string('code')->index();
             $table->string('place_id');
