@@ -6,6 +6,7 @@
 }
 
 {$APP_URL_INSECURE}:8080 {
+	log
 	root * /var/www/html/public
 	php_fastcgi 127.0.0.1:9000
 	file_server
@@ -14,6 +15,7 @@
 }
 
 :8080 {
+	log
  	respond 404
 	header -Server
 }
