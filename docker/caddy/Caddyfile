@@ -14,12 +14,6 @@
 	header -Server
 }
 
-http://{$FLY_APP_NAME}.{$FLY_DOMAIN}:8080 {
-	log
- 	respond 200
-	header -Server
-}
-
 :8080 {
 	log
  	respond 404
