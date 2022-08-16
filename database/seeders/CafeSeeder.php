@@ -97,8 +97,8 @@ final class CafeSeeder extends Seeder
                 'description' => 'High-quality coffee and drinks to work, study, pass a day, and snack. Pleasant design and friendly staff',
                 'code' => '5968+M2 Nicosia',
                 'place_id' => 'ChIJP2XvqN4X3hQRSJx83Z10fdM',
-                'latitude' => '35.16168769999999',
-                'longitude' => '33.3650239',
+                'latitude' => '35.1617596',
+                'longitude' => '33.3646965',
             ],
             [
                 'name' => 'A κχoffee project',
@@ -113,8 +113,8 @@ final class CafeSeeder extends Seeder
                 'description' => 'Tiny takeaway coffee shop opposite beach area with lots of coffee origins',
                 'code' => 'M3XW+RX Germasogeia, Cyprus',
                 'place_id' => 'ChIJD9eSovjL4BQRH06tPeZARns',
-                'latitude' => '34.69951760000001',
-                'longitude' => '33.09743460000001',
+                'latitude' => '34.6996821',
+                'longitude' => '33.09744450000001',
             ],
             [
                 'name' => "Nick's coffee bike",
