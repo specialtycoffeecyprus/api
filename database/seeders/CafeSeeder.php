@@ -39,10 +39,10 @@ final class CafeSeeder extends Seeder
             [
                 'name' => 'Menta Speciality CoffeeShop ',
                 'description' => 'Tiny coffee shop with a few tables outside. Greek barista and the perfect V60 and Cold Brew',
-                'code' => '5975+XF Nicosia, Cyprus',
+                'code' => 'WJ8M+5P Larnaca',
                 'place_id' => 'ChIJI3HxklcX3hQRHDVP87cbnIo',
-                'latitude' => '35.1649223',
-                'longitude' => '33.35864530000001',
+                'latitude' => '34.9154668',
+                'longitude' => '33.6343498',
             ],
             [
                 'name' => 'Kollaborative Coffee Roasters',
