@@ -124,6 +124,14 @@ final class CafeSeeder extends Seeder
                 'latitude' => '34.9176959',
                 'longitude' => '33.6327684',
             ],
+            [
+                'name' => 'The Shopkeeper & Co',
+                'description' => 'Bizarre busy store and coffee bar',
+                'code' => 'M2JW+F5 Limassol, Cyprus',
+                'place_id' => 'ChIJEY-Nnxwz5xQRptn4sJVrQW0',
+                'latitude' => '34.6812041',
+                'longitude' => '33.0454237',
+            ],
         ]);
     }
 }
