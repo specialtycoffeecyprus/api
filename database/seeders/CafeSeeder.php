@@ -36,14 +36,14 @@ final class CafeSeeder extends Seeder
                 'latitude' => '34.889787',
                 'longitude' => '33.6371021',
             ],
-            [
-                'name' => 'Menta Speciality CoffeeShop ',
-                'description' => 'Tiny coffee shop with a few tables outside. Greek barista and the perfect V60 and Cold Brew',
-                'code' => 'WJ8M+5P Larnaca',
-                'place_id' => 'ChIJI3HxklcX3hQRHDVP87cbnIo',
-                'latitude' => '34.9154668',
-                'longitude' => '33.6343498',
-            ],
+            //[
+            //    'name' => 'Menta Speciality CoffeeShop ',
+            //    'description' => 'Tiny coffee shop with a few tables outside. Greek barista and the perfect V60 and Cold Brew',
+            //    'code' => 'WJ8M+5P Larnaca',
+            //    'place_id' => 'ChIJI3HxklcX3hQRHDVP87cbnIo',
+            //    'latitude' => '34.9154668',
+            //    'longitude' => '33.6343498',
+            //],
             [
                 'name' => 'Kollaborative Coffee Roasters',
                 'description' => 'Middle-size coffee shop and bar in Nicosia old town. Selection of coffee origins, few tables inside and outside',
