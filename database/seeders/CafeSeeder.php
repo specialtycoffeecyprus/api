@@ -132,6 +132,30 @@ final class CafeSeeder extends Seeder
                 'latitude' => '34.6812041',
                 'longitude' => '33.0454237',
             ],
+            [
+                'name' => 'DejaBrew Speciality Coffee',
+                'description' => 'Coffee roaster and coffee store',
+                'code' => 'M2RV+GR Limassol, Cyprus',
+                'place_id' => 'ChIJHdMhqtYz5xQRtXJ3NzfOGGQ',
+                'latitude' => '34.6912742',
+                'longitude' => '33.0446085',
+            ],
+            [
+                'name' => 'Tribe Coffee Roasters',
+                'description' => 'Coffee Roasters',
+                'code' => 'M2QV+GV Limassol, Cyprus',
+                'place_id' => 'ChIJTWSzFg4z5xQRYIfzo8CtQQA',
+                'latitude' => '34.6887849',
+                'longitude' => '33.044686',
+            ],
+            [
+                'name' => 'Beanhaus Coffee Roasters',
+                'description' => 'Coffee Roasters',
+                'code' => 'QCGC+49 Paphos, Cyprus',
+                'place_id' => 'ChIJV_gcY_QG5xQRCJM84hwoQ6Y',
+                'latitude' => '34.775349',
+                'longitude' => '32.4209081',
+            ],
         ]);
     }
 }
