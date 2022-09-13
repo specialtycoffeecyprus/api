@@ -156,6 +156,14 @@ final class CafeSeeder extends Seeder
                 'latitude' => '34.775349',
                 'longitude' => '32.4209081',
             ],
+            [
+                'name' => 'UTU Specialty Coffee',
+                'description' => 'New tiny coffee shop in town. Try the origami coffee :-)',
+                'code' => '5995+97 Nicosia, Cyprus',
+                'place_id' => 'ChIJEe2tD5cX3hQR-YQGWRv379k',
+                'latitude' => '35.1684952',
+                'longitude' => '33.3582323',
+            ],
         ]);
     }
 }
