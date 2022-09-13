@@ -1,7 +1,8 @@
 ﻿*.cache
 .dockerignore
 .editorconfig
-.env
+.env*
+!.env.production
 .git*
 .idea
 .phpstorm.meta.php
