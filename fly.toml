@@ -39,3 +39,7 @@ grace_period = "5s"
 interval = "10s"
 restart_limit = 0
 timeout = "1s"
+
+[[statics]]
+guest_path = "/var/www/html/public/assets"
+url_prefix = "/assets"
