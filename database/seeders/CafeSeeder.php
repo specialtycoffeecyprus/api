@@ -164,6 +164,14 @@ final class CafeSeeder extends Seeder
                 'latitude' => '35.1684952',
                 'longitude' => '33.3582323',
             ],
+            [
+                'name' => 'Wagmi coffee',
+                'description' => 'A new large coffee shop in the old town with experienced baristas and a varied beverage menu',
+                'code' => 'M2GW+3C Limassol, Cyprus',
+                'place_id' => 'ChIJewyjOR8z5xQR1z6IckS_PI8',
+                'latitude' => '34.6751652',
+                'longitude' => '33.0460581',
+            ],
         ]);
     }
 }
