@@ -23,7 +23,7 @@
     "support": {
         "email": "specialtycoffeecy@gmail.com",
         "issues": "https://github.com/specialtycoffeecyprus/specialty-api/issues",
-        "docs": "https://habr.com/ru/post/677288/"
+        "docs": "https://dev.to/vladimir_mvs/pragmatic-development-2lph"
     },
     "require": {
         "php": "^8.1",
