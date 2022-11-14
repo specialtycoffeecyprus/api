@@ -26,7 +26,7 @@ final class CafeResource extends JsonResource
     /**
      * @inheritDoc
      * @param Request $request
-     * @return array{id: int, type: string, properties: array{name: string, description: string, placeId: string}, geometry: array{type: string, coordinates: float[]}}
+     * @return array{id: int, type: string, properties: array{name: string, description: string, placeId: string}, geometry: array{type: string, coordinates: array<float>}}
      */
     public function toArray($request): array
     {
@@ -42,8 +42,8 @@ final class CafeResource extends JsonResource
             'geometry' => [
                 'type' => 'Point',
                 'coordinates' => [
-                    (float)$this->longitude,
-                    (float)$this->latitude,
+                    (float) $this->longitude,
+                    (float) $this->latitude,
                 ],
             ],
         ];

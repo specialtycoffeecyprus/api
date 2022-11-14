@@ -11,7 +11,7 @@ use OpenApi\Attributes as OA;
 #[OA\Parameter(name: 'longitude', in: 'query', required: true, allowEmptyValue: false, schema: new OA\Schema(type: 'string', format: 'float', maximum: 180, minimum: -180))]
 final class CafesNearestRequest extends FormRequest
 {
-    /** @return array{latitude: string[], longitude: string[]} */
+    /** @return array{latitude: array<string>, longitude: array<string>} */
     public function rules(): array
     {
         return [

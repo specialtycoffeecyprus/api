@@ -6,7 +6,7 @@ namespace App\Http\Middleware;
 
 use Illuminate\Http\Middleware\TrustProxies as Middleware;
 
-class TrustProxies extends Middleware
+final class TrustProxies extends Middleware
 {
     /** @inheritdoc */
     protected $proxies = '*';

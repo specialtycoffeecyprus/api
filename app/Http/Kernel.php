@@ -19,7 +19,7 @@ use Illuminate\Routing\Middleware\ValidateSignature;
 
 final class Kernel extends HttpKernel
 {
-    /** @var string[] */
+    /** @var array<string> */
     protected $middleware = [
         TrustProxies::class,
         HandleCors::class,
@@ -30,7 +30,7 @@ final class Kernel extends HttpKernel
         JsonResponse::class,
     ];
 
-    /** @var string[][] */
+    /** @var array<array<string>> */
     protected $middlewareGroups = [
         'api' => [
             'throttle:api',
@@ -38,7 +38,7 @@ final class Kernel extends HttpKernel
         ],
     ];
 
-    /** @var string[] */
+    /** @var array<string> */
     protected $routeMiddleware = [
         'cache.headers' => SetCacheHeaders::class,
         'signed' => ValidateSignature::class,

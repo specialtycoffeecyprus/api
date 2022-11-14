@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-dataset('Request methods', static fn(): array => [
+dataset('Request methods', static fn (): array => [
     Request::METHOD_GET => [
         'method' => Request::METHOD_GET,
         'status' => Response::HTTP_OK,

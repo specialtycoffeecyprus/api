@@ -47,7 +47,9 @@
         "ext-intl": "*",
         "brianium/paratest": "*",
         "hotmeteor/spectator": "*",
+        "laravel/pint": "*",
         "mockery/mockery": "*",
+        "nunomaduro/phpinsights": "*",
         "pestphp/pest": "*",
         "pestphp/pest-plugin-laravel": "*",
         "pestphp/pest-plugin-parallel": "*",
@@ -69,7 +71,6 @@
         "symfony/polyfill-php73": "*",
         "symfony/polyfill-php80": "*",
         "symfony/polyfill-php81": "*",
-        "symfony/var-dumper": "*",
         "tijsverkoyen/css-to-inline-styles": "*"
     },
     "autoload": {
@@ -87,6 +88,7 @@
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "pestphp/pest-plugin": true
         },
         "apcu-autoloader": true,
