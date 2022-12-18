@@ -37,11 +37,12 @@
         "ext-pcre": "*",
         "ext-pdo": "*",
         "ext-pdo_sqlite": "*",
-        "ext-sqlite3": "*",
         "ext-phar": "*",
+        "ext-sqlite3": "*",
         "laravel/framework": "^9.0",
         "laravel/scout": "*",
-        "sentry/sentry-laravel": "*"
+        "sentry/sentry-laravel": "*",
+        "spatie/laravel-robots-middleware": "*"
     },
     "require-dev": {
         "ext-intl": "*",

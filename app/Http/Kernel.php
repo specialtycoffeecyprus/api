@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http;
 
 use App\Http\Middleware\JsonResponse;
+use App\Http\Middleware\NoIndexRobotsMiddleware;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
 use App\Http\Middleware\TrimStrings;
 use App\Http\Middleware\TrustProxies;
@@ -21,6 +22,7 @@ final class Kernel extends HttpKernel
 {
     /** @var array<string> */
     protected $middleware = [
+        NoIndexRobotsMiddleware::class,
         TrustProxies::class,
         HandleCors::class,
         PreventRequestsDuringMaintenance::class,
