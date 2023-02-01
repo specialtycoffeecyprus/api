@@ -97,13 +97,11 @@
             "pestphp/pest-plugin": true
         },
         "apcu-autoloader": true,
-        "classmap-authoritative": false,
         "discard-changes": true,
         "htaccess-protect": false,
         "notify-on-install": false,
         "optimize-autoloader": true,
         "platform-check": false,
-        "preferred-install": "dist",
         "sort-packages": true
     },
     "scripts": {
