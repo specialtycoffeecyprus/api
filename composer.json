@@ -65,9 +65,6 @@
     "replace": {
         "dragonmantank/cron-expression": "*",
         "egulias/email-validator": "*",
-        "guzzlehttp/promises": "*",
-        "guzzlehttp/psr7": "*",
-        "guzzlehttp/uri-template": "*",
         "http-interop/http-factory-guzzle": "*",
         "league/commonmark": "*",
         "league/flysystem": "*",
