@@ -12,7 +12,6 @@ return new class extends Migration
     {
         Schema::create('cafes', static function (Blueprint $table): void {
             $table->id();
-            $table->timestamps();
             $table->string('name')->index();
             $table->text('description')->index()->nullable();
             $table->string('code')->index();

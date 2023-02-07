@@ -13,12 +13,6 @@ final class Cafe extends Model
     use HasFactory;
     use Searchable;
 
-    protected $hidden = [
-        'created_at',
-        'updated_at',
-    ];
-
-
     public function toSearchableArray(): array
     {
         return [
