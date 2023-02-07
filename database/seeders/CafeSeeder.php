@@ -180,6 +180,22 @@ final class CafeSeeder extends Seeder
                 'latitude' => '35.1619516',
                 'longitude' => '33.3634972',
             ],
+            [
+                'name' => 'Brew Story',
+                'description' => 'Fresh and little coffee shop in Nicosia\'s centre. Several tables both indoors and outside',
+                'code' => '5985+76 Nicosia, Cyprus',
+                'place_id' => 'ChIJAaH8iuUX3hQR1lkyOy94fLg',
+                'latitude' => 35.1657465,
+                'longitude' => 33.358005,
+            ],
+            [
+                'name' => 'Localito Specialty Coffee',
+                'description' => 'Paphos\'s newest coffee shop, featuring BeanHaus beans. try it!',
+                'code' => 'QCFH+V4 Paphos, Cyprus',
+                'place_id' => 'ChIJybWRnfgX5xQRKncxplIhl8M',
+                'latitude' => 34.7747226,
+                'longitude' => 32.4278571,
+            ],
         ]);
     }
 }
