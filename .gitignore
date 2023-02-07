@@ -5,6 +5,5 @@
 _ide_helper.php
 _ide_helper_models.php
 bootstrap/cache/*
-http-client.*
-http-request.*
 vendor
+/http-requests/
