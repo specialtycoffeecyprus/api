@@ -109,6 +109,6 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
         ],
-        "openapi": "openapi --version 3.1.0 --output storage/openapi.yaml app"
+        "openapi": "openapi --output storage/openapi.yaml app"
     }
 }
