@@ -15,7 +15,6 @@ final class Cafe extends Model
     use Searchable;
     use SoftDeletes;
 
-    /** @inheritdoc */
     protected $hidden = [
         'created_at',
         'updated_at',
@@ -23,7 +22,6 @@ final class Cafe extends Model
     ];
 
 
-    /** @inheritDoc */
     public function toSearchableArray(): array
     {
         return [

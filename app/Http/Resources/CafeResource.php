@@ -24,7 +24,6 @@ use OpenApi\Attributes as OA;
 final class CafeResource extends JsonResource
 {
     /**
-     * @inheritDoc
      * @param Request $request
      * @return array{id: int, type: string, properties: array{name: string, description: string, placeId: string}, geometry: array{type: string, coordinates: array<float>}}
      */

@@ -8,6 +8,5 @@ use Illuminate\Http\Middleware\TrustProxies as Middleware;
 
 final class TrustProxies extends Middleware
 {
-    /** @inheritdoc */
     protected $proxies = '*';
 }
