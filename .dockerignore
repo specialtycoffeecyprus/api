@@ -9,13 +9,10 @@
 Dockerfile
 LICENSE
 README.md
-_ide_helper.php
-_ide_helper_models.php
 bootstrap/cache/*
 database/*.sqlite*
 fly.*
-http-client.*
-http-request.*
+http-requests
 phpunit.xml
 rector.php
 storage/framework/cache/*

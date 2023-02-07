@@ -1,23 +1,37 @@
-FROM php:8.1-cli-alpine
+FROM php:8.2-fpm-alpine
 
 LABEL fly_launch_runtime="laravel"
 
-RUN docker-php-ext-enable opcache
-RUN curl -sS --compressed https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN apk add --update --no-cache nginx \
+    && apk add --no-cache --virtual .build-dependencies $PHPIZE_DEPS \
+    && pecl install apcu \
+    && docker-php-ext-enable apcu opcache \
+    && pecl clear-cache \
+    && apk del .build-dependencies \
+    && rm -fr /tmp/* /usr/src/* /usr/local/include/ /usr/local/lib/php/build/ /usr/local/lib/php/doc/ /usr/local/lib/php/test/ /usr/local/php/ \
+    && chown -Rf www-data:www-data /var/lib/nginx
 
-COPY docker/run.sh /
-COPY docker/php/ ${PHP_INI_DIR}/
+COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-USER www-data:www-data
+COPY docker/ /
+
 WORKDIR /var/www/html
 
 COPY --chown=www-data:www-data composer.* ./
 
-RUN composer install --no-autoloader --no-ansi --no-cache --no-dev --no-interaction --no-progress --no-scripts
+ENV COMPOSER_ALLOW_SUPERUSER 1
+
+RUN composer install --no-autoloader --no-ansi --no-cache --no-dev --no-interaction --no-progress --no-scripts \
+    && chown -R www-data:www-data /var/www/html/vendor/
 
 COPY --chown=www-data:www-data . .
 
-RUN composer dump-autoload --classmap-authoritative --no-ansi --no-cache --no-interaction
+RUN composer dump-autoload --classmap-authoritative --no-ansi --no-cache --no-interaction \
+    && chown -R www-data:www-data \
+      /var/www/html/vendor/autoload.php \
+      /var/www/html/vendor/composer/autoload_*.php \
+      /var/www/html/vendor/composer/ClassLoader.php \
+      /var/www/html/vendor/composer/LICENSE
 
 EXPOSE 8080
 
