@@ -46,7 +46,6 @@
     },
     "require-dev": {
         "ext-intl": "*",
-        "brianium/paratest": "*",
         "hotmeteor/spectator": "*",
         "laravel/pint": "*",
         "mockery/mockery": "*",
