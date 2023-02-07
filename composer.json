@@ -50,7 +50,6 @@
         "hotmeteor/spectator": "*",
         "laravel/pint": "*",
         "mockery/mockery": "*",
-        "nunomaduro/phpinsights": "*",
         "pestphp/pest": "*",
         "pestphp/pest-plugin-laravel": "*",
         "pestphp/pest-plugin-parallel": "*",
