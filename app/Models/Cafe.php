@@ -17,9 +17,9 @@ final class Cafe extends Model
     {
         return [
             'id' => $this->id,
-            'code' => $this->code,
-            'name' => $this->name,
             'description' => $this->description,
+            'name' => $this->name,
+            'region' => $this->region,
         ];
     }
 }

@@ -14,8 +14,9 @@ return new class extends Migration
             $table->id();
             $table->string('name')->index();
             $table->text('description')->index()->nullable();
-            $table->string('code')->index();
+            $table->string('region')->index();
             $table->string('place_id');
+            $table->string('url');
             $table->string('latitude', 20)->index();
             $table->string('longitude', 20)->index();
         });
