@@ -10,4 +10,4 @@ touch database/database.sqlite \
     /var/www/html/storage/framework/views/
 
 php-fpm --daemonize
-nginx
+nginx -g 'daemon off;'
