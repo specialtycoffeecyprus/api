@@ -22,12 +22,7 @@ soft_limit = 20
 type = "connections"
 
 [[services.ports]]
-force_https = true
-handlers = ["http"]
-port = 80
-
-[[services.ports]]
-handlers = ["tls", "http"]
+handlers = ["tls"]
 port = 443
 
 [[services.http_checks]]
