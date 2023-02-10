@@ -219,6 +219,15 @@ final class CafeSeeder extends Seeder
                 'latitude' => 34.7747226,
                 'longitude' => 32.4278571,
             ],
+            [
+                'name' => 'Nomad Bread & Coffee',
+                'description' => 'The third location of the famous coffee chain',
+                'region' => 'Limassol',
+                'place_id' => 'ChIJQe38LdIz5xQR8iT0WWNTcDc',
+                'url' => 'https://maps.google.com/?cid=3994784555653670130',
+                'latitude' => 34.6860825,
+                'longitude' => 33.0486783,
+            ],
         ]);
     }
 }
