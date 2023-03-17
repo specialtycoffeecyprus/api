@@ -22,7 +22,7 @@ final class RouteServiceProvider extends ServiceProvider
     }
 
 
-    protected function configureRateLimiting(): void
+    private function configureRateLimiting(): void
     {
         RateLimiter::for('api', static fn (Request $request): Limit => Limit::perMinute(60)->by($request->user()?->id ?: $request->ip()));
     }

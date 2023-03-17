@@ -8,7 +8,6 @@ use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
 
 final class TrimStrings extends Middleware
 {
-    /** @var array<string> */
     protected $except = [
         'current_password',
         'password',

@@ -42,7 +42,7 @@
         "ext-session": "*",
         "ext-tokenizer": "*",
         "ext-zend-opcache": "*",
-        "laravel/framework": "^9.0",
+        "laravel/framework": "^10.0",
         "laravel/scout": "*",
         "sentry/sentry-laravel": "*",
         "spatie/laravel-robots-middleware": "*"

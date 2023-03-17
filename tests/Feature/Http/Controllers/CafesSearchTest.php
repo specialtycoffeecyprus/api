@@ -19,8 +19,8 @@ test('fail if search query is invalid', function (string $query, string $error):
 })->with([
     'absent' => ['query' => '', 'error' => 'The q field is required.'],
     'empty' => ['query' => 'q=', 'error' => 'The q field is required.'],
-    'too short' => ['query' => 'q=a', 'error' => 'The q must be between 3 and 255 characters.'],
-    'too long' => ['query' => 'q='.Str::random(256), 'error' => 'The q must be between 3 and 255 characters.'],
+    'too short' => ['query' => 'q=a', 'error' => 'The q field must be between 3 and 255 characters.'],
+    'too long' => ['query' => 'q='.Str::random(256), 'error' => 'The q field must be between 3 and 255 characters.'],
 ]);
 
 test('can search cafe', function (string $q): void {
