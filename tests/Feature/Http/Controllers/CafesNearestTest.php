@@ -9,7 +9,7 @@ beforeEach(function (): void {
     $this->endpoint = route('cafes.nearest');
 });
 
-test('can process request method', function (string $latitude, string $longitude, string $method, int $status): void {
+test('can process request method', function (int $latitude, int $longitude, string $method, int $status): void {
     $this->$method($this->endpoint."?latitude=$latitude&longitude=$longitude")->assertStatus($status);
 })->with('Search locations')->with('Request methods');
 

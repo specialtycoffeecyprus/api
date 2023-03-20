@@ -58,7 +58,6 @@
         "mockery/mockery": "*",
         "pestphp/pest": "*",
         "pestphp/pest-plugin-laravel": "*",
-        "pestphp/pest-plugin-parallel": "*",
         "rector/rector": "*",
         "zircote/swagger-php": "*"
     },
@@ -69,6 +68,7 @@
         "league/commonmark": "*",
         "league/flysystem": "*",
         "myclabs/deep-copy": "*",
+        "myclabs/php-enum": "*",
         "ramsey/uuid": "*",
         "symfony/mime": "*",
         "symfony/mailer": "^6.0",
