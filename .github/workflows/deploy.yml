@@ -22,7 +22,7 @@ jobs:
         with:
           composer-options: "--classmap-authoritative"
 
-      - run: ./vendor/bin/pest --ci -p
+      - run: ./vendor/bin/pest -p
 
   deploy:
     needs: test
