@@ -3,14 +3,10 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 primary_region = "ams"
 
-[processes]
-app = "php-fpm --daemonize"
-web = "nginx -g 'daemon off;'"
-
 [[services]]
 protocol = "tcp"
 internal_port = 8080
-processes = ["web"]
+processes = ["app"]
 
 [[services.ports]]
 port = 443
