@@ -1,40 +1,27 @@
 app = "specialty-api"
 kill_signal = "SIGINT"
 kill_timeout = 5
-processes = []
-
-[env]
-PRIMARY_REGION = "fra"
-
-[experimental]
-allowed_public_ports = []
-auto_rollback = true
+primary_region = "ams"
 
 [[services]]
+protocol = "tcp"
 internal_port = 8080
 processes = ["app"]
-protocol = "tcp"
-script_checks = []
-
-[services.concurrency]
-hard_limit = 25
-soft_limit = 20
-type = "connections"
 
 [[services.ports]]
-handlers = ["tls"]
 port = 443
+handlers = ["tls"]
+
+[services.concurrency]
+type = "connections"
+hard_limit = 25
+soft_limit = 20
 
 [[services.http_checks]]
-grace_period = "5s"
 interval = "10s"
+timeout = "1s"
+grace_period = "5s"
+restart_limit = 0
 method = "get"
 path = "/cafes/random"
 protocol = "http"
-restart_limit = 0
-timeout = "1s"
-tls_skip_verify = false
-
-[[statics]]
-guest_path = "qaz"
-url_prefix = "qaz"
