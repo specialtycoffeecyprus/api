@@ -4,7 +4,7 @@ kill_timeout = 5
 primary_region = "ams"
 
 [processes]
-app = "php-fpm"
+app = "php-fpm --daemonize"
 web = "nginx -g 'daemon off;'"
 
 [[services]]
