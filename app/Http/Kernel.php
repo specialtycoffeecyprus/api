@@ -29,13 +29,13 @@ final class Kernel extends HttpKernel
         ValidatePostSize::class,
         TrimStrings::class,
         ConvertEmptyStringsToNull::class,
-        JsonResponse::class,
     ];
 
     protected $middlewareGroups = [
         'api' => [
-            'throttle:api',
+            ThrottleRequests::class.':api',
             SubstituteBindings::class,
+            JsonResponse::class,
             ApiRestrictions::class,
         ],
     ];
