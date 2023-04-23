@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http;
 
+use App\Http\Middleware\ApiRestrictions;
 use App\Http\Middleware\JsonResponse;
 use App\Http\Middleware\NoIndexRobotsMiddleware;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
@@ -35,6 +36,7 @@ final class Kernel extends HttpKernel
         'api' => [
             'throttle:api',
             SubstituteBindings::class,
+            ApiRestrictions::class,
         ],
     ];
 
