@@ -8,6 +8,7 @@ use Closure;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 use function abort;
 use function config;
@@ -21,6 +22,7 @@ final class ApiRestrictions
      */
     public function handle(Request $request, Closure $next): Response|JsonResponse
     {
+        Log::debug(print_r($_SERVER, true));
         $token = $request->bearerToken();
         if (in_array($token, config('auth.tokens'), true)) {
             return $next($request);
