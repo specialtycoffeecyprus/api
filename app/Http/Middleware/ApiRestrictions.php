@@ -31,9 +31,8 @@ final class ApiRestrictions
             return $next($request);
         }
 
-        $referer = $request->header('referer');
-        $referer = $referer !== null ? trim((string) $referer, '/') : $referer;
-        if (in_array($referer, config('cors.allowed_origins'), true)) {
+        $origin = $request->header('origin');
+        if (in_array($origin, config('cors.allowed_origins'), true)) {
             return $next($request);
         }
 
