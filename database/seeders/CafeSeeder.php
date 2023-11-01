@@ -228,6 +228,24 @@ final class CafeSeeder extends Seeder
                 'latitude' => 34.6860825,
                 'longitude' => 33.0486783,
             ],
+            [
+                'name' => 'Nomad Bread & Coffee',
+                'description' => 'Nicosia shop of the famous coffee chain',
+                'region' => 'Nicosia',
+                'place_id' => 'ChIJZ8IQN4MX3hQRXyoKoOXI2gc',
+                'url' => 'https://maps.google.com/?cid=565985591746505311',
+                'latitude' => 35.1673995,
+                'longitude' => 33.3676912,
+            ],
+            [
+                'name' => 'Samba Coffee Roasters Cyprus',
+                'description' => 'Coffee wholesaler',
+                'region' => 'Limassol',
+                'place_id' => 'ChIJCemF_r0z5xQRiSA9yv6wg2s',
+                'url' => 'https://maps.google.com/?cid=7747230392368570505',
+                'latitude' => 34.6971016,
+                'longitude' => 33.0518579,
+            ],
         ]);
     }
 }
