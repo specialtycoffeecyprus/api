@@ -94,6 +94,15 @@ final class CafeSeeder extends Seeder
                 'longitude' => '33.0847664',
             ],
             [
+                'name' => 'Bike & Bean Coffee Station Ag.Ioannis',
+                'description' => 'The sweet little coffee spot near the beach serves excellent speciality coffee by skilled baristas',
+                'region' => 'Limassol',
+                'place_id' => 'ChIJ4xqRjlEz5xQRJAqBCWys4Pc',
+                'url' => 'https://maps.google.com/?cid=17861465702167284260',
+                'latitude' => '34.674291',
+                'longitude' => '33.026783',
+            ],
+            [
                 'name' => 'Cultivos Coffee',
                 'description' => 'Third-wave specialty coffee shop in Paphos. Single-origin beans on the grinder are definitely recommended',
                 'region' => 'Paphos',
