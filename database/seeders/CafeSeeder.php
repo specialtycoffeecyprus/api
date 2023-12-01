@@ -202,15 +202,6 @@ final class CafeSeeder extends Seeder
                 'longitude' => '33.3634972',
             ],
             [
-                'name' => 'Brew Story',
-                'description' => "Fresh and little coffee shop in Nicosia's centre. Several tables both indoors and outside",
-                'region' => 'Nicosia',
-                'place_id' => 'ChIJAaH8iuUX3hQR1lkyOy94fLg',
-                'url' => 'https://maps.google.com/?cid=13293632344342813142',
-                'latitude' => 35.1657465,
-                'longitude' => 33.358005,
-            ],
-            [
                 'name' => 'Localito Specialty Coffee',
                 'description' => "Paphos's newest coffee shop, featuring BeanHaus beans. try it!",
                 'region' => 'Paphos',
