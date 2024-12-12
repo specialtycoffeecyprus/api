@@ -220,6 +220,15 @@ final class CafeSeeder extends Seeder
                 'longitude' => 32.4278571,
             ],
             [
+                'name' => 'Localito Specialty Coffee (El. Venizelou Street)',
+                'description' => 'An unique space for coffee lovers to connect, sip, and relax',
+                'region' => 'Paphos',
+                'place_id' => 'ChIJ-a69cgAH5xQRsBLDVyghk8k',
+                'url' => 'https://maps.google.com/?cid=14524989680354792112',
+                'latitude' => 34.7819243,
+                'longitude' => 32.4358951,
+            ],
+            [
                 'name' => 'Nomad Bread & Coffee',
                 'description' => 'The third location of the famous coffee chain',
                 'region' => 'Limassol',
